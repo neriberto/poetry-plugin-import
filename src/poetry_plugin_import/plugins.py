@@ -1,9 +1,10 @@
 import os
-import re
 from typing import Optional, Dict, Any
 
 from poetry.console.commands.command import Command
 from poetry.plugins.application_plugin import ApplicationPlugin
+
+from poetry_plugin_import.utils import parse_requirements
 
 
 class CustomCommand(Command):
@@ -20,19 +21,8 @@ class CustomCommand(Command):
         config: Optional[Dict[str, Any]] = pyproject_config.get("tool", dict()).get("poetry")
         dependencies = config.get('dependencies')
 
-        with open(file_path) as reader:
-            lines = reader.read()
-            regex = r"(.[^=~<>]+)([=~<>]+)(.*)"
-            matches = re.finditer(regex, lines, re.MULTILINE)
-            for _, match in enumerate(matches, start=1):
-                library = match.group(1)
-                condition = match.group(2)
-                version = match.group(3)
-
-                if condition != '==':
-                    version = f'{condition}{version}'
-
-                dependencies.update({library: version})
+        for name, pretty_constraint in parse_requirements(file_path):
+            dependencies.update({name: pretty_constraint})
 
         self.poetry.pyproject.save()
 
