@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "poetry-plugin-import"
+version = "0.1.0"
+description = "A Poetry plugin that import dependencies from requirements.txt"
+authors = ["Neriberto C.Prado <neriberto@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "poetry_plugin_import", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "==2.22.0"
+pydantic = "~=1.0.0"
+fastapi = ">=0.60.0"
+uvicorn = "*"
+asyncio = "==3.4.3"
+click = "==7.0"
+mock = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
