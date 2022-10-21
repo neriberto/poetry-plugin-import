@@ -37,6 +37,8 @@ testpaths = [
 [tool.mypy]
 files = "src"
 mypy_path = "src"
+ignore_missing_imports = true
+check_untyped_defs = true
 namespace_packages = true
 explicit_package_bases = true
 show_error_codes = true
