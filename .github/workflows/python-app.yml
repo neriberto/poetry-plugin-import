@@ -29,9 +29,9 @@ jobs:
         curl -sSL https://install.python-poetry.org | python3 -
         poetry install
         poetry build
-    - name: Lint with flake8
+    - name: Lint with mypy
       run: |
         poetry run mypy
-    - name: Test with pytest
+    - name: Test with coverage/pytest
       run: |
         poetry run coverage run -m --source=src pytest tests
