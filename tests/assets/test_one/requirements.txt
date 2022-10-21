@@ -1,0 +1,14 @@
+requests==1.0.0
+pydantic~=1.0.0
+fastapi>=0.60.0
+uvicorn[standard]
+asyncio==3.4.3
+requests==2.22.0
+click==7.0
+
+# teste de qualidade
+mock
+pytest
+
+# github
+git+https://github.com/neriberto/malwarefeeds.git@0.1.0#egg=malwarefeeds

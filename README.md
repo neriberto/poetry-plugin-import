@@ -1,5 +1,9 @@
 # Poetry Plugin Import
 
+[![License: LGPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org)
+![PyPI](https://img.shields.io/pypi/pyversions/poetry-plugin-import)
+![PyPI](https://img.shields.io/pypi/v/poetry-plugin-import?color=gree&label=pypi%20package)
+
 A [Poetry](https://python-poetry.org) plugin that import dependencies from requirements.txt.
 
 ## Installation
