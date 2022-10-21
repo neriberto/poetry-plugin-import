@@ -3,12 +3,13 @@
 [![License: LGPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org)
 ![PyPI](https://img.shields.io/pypi/pyversions/poetry-plugin-import)
 ![PyPI](https://img.shields.io/pypi/v/poetry-plugin-import?color=gree&label=pypi%20package)
+[![Python application](https://github.com/neriberto/poetry-plugin-import/actions/workflows/python-app.yml/badge.svg)](https://github.com/neriberto/poetry-plugin-import/actions/workflows/python-app.yml)
 
 A [Poetry](https://python-poetry.org) plugin that import dependencies from requirements.txt.
 
 ## Installation
 
-In order to install the plugin you need to have installed a poetry version `>1.0` and type:
+In order to install the plugin you need to have installed a poetry version `>1.2.2` and type:
 
 ```bash
 poetry self add poetry-plugin-import
