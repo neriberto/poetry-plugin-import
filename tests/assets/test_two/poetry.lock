@@ -219,20 +219,32 @@ files = [
 
 [[package]]
 name = "pydantic"
-version = "1.0"
+version = "1.6.2"
 description = "Data validation and settings management using python 3.6 type hinting"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "pydantic-1.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:0f35a8d780534f3db5c36fe4d516bd7a12559d6972dccbc55161a90eb20dd67a"},
-    {file = "pydantic-1.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:360433b2422fcb2203356a30a90f6ae45d9e613243588504509aa5d544d6f68e"},
-    {file = "pydantic-1.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:751f755efb9ab395ec7bd562f123e57a68e6164f06fc735b04ccb8df1ad5b6c8"},
-    {file = "pydantic-1.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:c044e589c6d8d54ad55f5e73aa8f8d61dcab038b0a6267988d68e0361ae77f0e"},
-    {file = "pydantic-1.0-py36.py37.py38-none-any.whl", hash = "sha256:a1ba32e2284185260cf5d35ffe2c8cbdd2244d62e5952e69572d4a458d6d46a7"},
-    {file = "pydantic-1.0.tar.gz", hash = "sha256:bf474cebe007701806f5f8b076fb8508116606e5c721734bb855bfec4185263c"},
+    {file = "pydantic-1.6.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:be4e0263ef515ae14f06e9fb372843f00bdb218ec4f2f04beb3480ac1538a9a9"},
+    {file = "pydantic-1.6.2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:14e598055b65d2e6cedf10dc3de6ad1bb04ca3eec348e4af1cf5e5e496deab55"},
+    {file = "pydantic-1.6.2-cp36-cp36m-manylinux2014_i686.whl", hash = "sha256:d09adff1c70351a8750941dd39fda25447eab2e3cdb5b2aade340f69f6f53e84"},
+    {file = "pydantic-1.6.2-cp36-cp36m-manylinux2014_x86_64.whl", hash = "sha256:cd777c102ba31bc9992093c2e9f778c21b3965566d1fa5ac9f9b7cea2e67fe2a"},
+    {file = "pydantic-1.6.2-cp36-cp36m-win_amd64.whl", hash = "sha256:548c284237b0c61e0e785ad03167c75723f22000f82e8104d8981fdf50ce14e8"},
+    {file = "pydantic-1.6.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:1d42c7408cde8a224c2bb969bfb9dca21f3b1eec37a92044be8bcd7d35ea5826"},
+    {file = "pydantic-1.6.2-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:90310c1c5945b4fe2ff7bd69e306e54d192e55d22480657ddd6d2519cf2f12ba"},
+    {file = "pydantic-1.6.2-cp37-cp37m-manylinux2014_i686.whl", hash = "sha256:bf9e5dd5e0e7e64541508f657c63bf6ab869109cb39f017f935acfeb64ea9be8"},
+    {file = "pydantic-1.6.2-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:6eea211e8b427841a16f43fa739ac06059db6af0d167476b928dbb237d870b77"},
+    {file = "pydantic-1.6.2-cp37-cp37m-win_amd64.whl", hash = "sha256:60b8956b57045224294691b78a6a4be0f321271a9f1c2a7fef25248e4c4f20df"},
+    {file = "pydantic-1.6.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:76b241172d6e22403e116e1d3b7305b6a9479323f8168f2fcb300ffe698443b9"},
+    {file = "pydantic-1.6.2-cp38-cp38-manylinux1_i686.whl", hash = "sha256:433dda6200104d7aa38c27a6ea52485e69931042556065402281cc73a57fd680"},
+    {file = "pydantic-1.6.2-cp38-cp38-manylinux2014_i686.whl", hash = "sha256:51dec047b44f0de4dbfa301b73df605918088348b951b8b4616127249febfe30"},
+    {file = "pydantic-1.6.2-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:f6a1a465dd72aff0462486588a2bf905f9169e575deec1e6f6d00240fe1b4e00"},
+    {file = "pydantic-1.6.2-cp38-cp38-win_amd64.whl", hash = "sha256:ae48129396bd5acfaef1cdaaa959ac8ab5d02c026b1fdffb421dc6fa81d7861d"},
+    {file = "pydantic-1.6.2-py36.py37.py38-none-any.whl", hash = "sha256:93f7f510fc366b99dace4a3d1f036aafcfe908092c5f2572ad4a96be24da199c"},
+    {file = "pydantic-1.6.2.tar.gz", hash = "sha256:e77e5f640f1093bf417b841d9b4148bd4212bb0dbb2cbb9024aa07f2b3b260eb"},
 ]
 
 [package.extras]
+dotenv = ["python-dotenv (>=0.10.4)"]
 email = ["email-validator (>=1.0.3)"]
 typing-extensions = ["typing-extensions (>=3.7.2)"]
 
@@ -294,22 +306,6 @@ urllib3 = ">=1.21.1,<1.27"
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
-
-[[package]]
-name = "setuptools"
-version = "65.5.1"
-description = "Easily download, build, install, upgrade, and uninstall Python packages"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "setuptools-65.5.1-py3-none-any.whl", hash = "sha256:d0b9a8433464d5800cbe05094acf5c6d52a91bfac9b52bcfc4d41382be5d5d31"},
-    {file = "setuptools-65.5.1.tar.gz", hash = "sha256:e197a19aa8ec9722928f2206f8de752def0e4c9fc6953527360d1c36d94ddb2f"},
-]
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-hoverxref (<2)", "sphinx-inline-tabs", "sphinx-notfound-page (==0.8.3)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
-testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pip (>=19.1)", "pip-run (>=8.8)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-timeout", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
-testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "starlette"
@@ -400,4 +396,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "064590ff48a7f14774ead3822a13c52a28a180d725359dfe4e67244668e8083b"
+content-hash = "2d9a8b3a329615c9a94ae22ab9dc78022497a76f6a4b171a3b5cea0889e1dc5e"
