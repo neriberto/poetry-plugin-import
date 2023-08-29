@@ -12,7 +12,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.7"
 requests = "==2.22.0"
-pydantic = "~=1.0.0"
+pydantic = ">=1.0,<1.7"
 fastapi = ">=0.60.0"
 uvicorn = "*"
 asyncio = "==3.4.3"
