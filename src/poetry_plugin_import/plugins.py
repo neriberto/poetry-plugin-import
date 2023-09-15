@@ -1,7 +1,7 @@
 """Module that implements the Command to the plugin."""
 
 import os
-from typing import Optional, Dict, Any
+from typing import Any, Dict, Optional
 
 from poetry.console.application import Application
 from poetry.console.commands.command import Command
