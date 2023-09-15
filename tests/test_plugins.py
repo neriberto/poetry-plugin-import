@@ -1,10 +1,8 @@
-import json
 import shutil
 import subprocess
 from pathlib import Path
 from subprocess import CompletedProcess
 from typing import List
-
 
 testing_assets = Path(__file__).parent / "assets"
 plugin_source_dir = Path(__file__).parent.parent / "poetry_plugin_import"
